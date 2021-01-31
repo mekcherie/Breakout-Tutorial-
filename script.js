@@ -24,7 +24,6 @@ const brickOffsetTop = 30;
 const brickOffsetLeft = 30;
 const score = 0;
 const lives = 3;
-console.log("Hello World")
 const bricks = [];
 for (const c = 0; c < brickColumnCount; 'c++') {
   bricks[c] = [];
