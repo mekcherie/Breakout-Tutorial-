@@ -1,0 +1,25 @@
+{
+  "name": "breakout-tutorial",
+  "version": "1.0.0",
+  "description": "a tutorial about breakout game ",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mekcherie/Breakout-Tutorial-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mekcherie/Breakout-Tutorial-/issues"
+  },
+  "homepage": "https://github.com/mekcherie/Breakout-Tutorial-#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
