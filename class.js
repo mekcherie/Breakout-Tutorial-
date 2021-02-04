@@ -157,4 +157,4 @@ class Ball {
   }
   setInterval(renderObjectsOnCanvas, 10);
 
-  export default {Ball, Brick, Paddle} 
+  export {Ball, Brick, Paddle} 
