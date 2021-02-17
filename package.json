@@ -4,7 +4,8 @@
   "description": "a tutorial about breakout game ",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "develop": "webpack --mode development --watch",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -16,10 +17,12 @@
     "url": "https://github.com/mekcherie/Breakout-Tutorial-/issues"
   },
   "homepage": "https://github.com/mekcherie/Breakout-Tutorial-#readme",
-  "dependencies": {},
   "devDependencies": {
     "eslint": "^7.18.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.22.1"
-  }
+    "eslint-plugin-import": "^2.22.1",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0"
+  },
+  "keywords": []
 }
