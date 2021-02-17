@@ -4,7 +4,7 @@
   "description": "a tutorial about breakout game ",
   "main": "script.js",
   "scripts": {
-    "develop": "webpack --mode development --watch",
+    "": "webpack --mode development --watch",
     "build": "webpack --mode production"
   },
   "repository": {
