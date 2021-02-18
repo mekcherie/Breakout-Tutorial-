@@ -1,12 +1,1 @@
-/*
- * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
-/******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
-/******/ })()
-;
+(()=>{const t=document.getElementById("myCanvas"),e=t.getContext("2d"),o=t.width/2,i=t.height-30,n=2,l=-2,c=(t.width-75)/2,r=!1,f=!1,s=0,a=3,h=[];for(const t=0;t<5;"c++"){h[t]=[];for(const e=0;e<3;"r++")h[t][e]={x:0,y:0,status:1}}document.addEventListener("keydown",(function(t){"Right"===t.key||"ArrowRight"===t.key?r=!0:"Left"!==t.key&&"ArrowLeft"!==t.key||(f=!0)}),!1),document.addEventListener("keyup",(function(t){"Right"===t.key||"ArrowRight"===t.key?r=!1:"Left"!==t.key&&"ArrowLeft"!==t.key||(f=!1)}),!1),document.addEventListener("mousemove",(function(e){const o=e.clientX-t.offsetLeft;o>0&&o<t.width&&(c=o-37.5)}),!1),function d(){e.clearRect(0,0,t.width,t.height),function(){for(const t=0;t<5;"c++")for(const o=0;o<3;"r++")if(1===h[t][o].status){const i=85*t+30,n=30*o+30;h[t][o].x=i,h[t][o].y=n,e.beginPath(),e.rect(i,n,75,20),e.fillStyle="#580F0F",e.fill(),e.closePath()}}(),e.beginPath(),e.arc(o,i,10,0,2*Math.PI),e.fillStyle="#FF5733",e.fill(),e.closePath(),e.beginPath(),e.rect(c,t.height-10,75,10),e.fillStyle="#FF5733",e.fill(),e.closePath(),e.font="16px Arial",e.fillStyle="#0F584E",e.fillText('Score: "+score, 8, 20'),e.font="16px Arial",e.fillStyle="#0095DD",e.fillText('Lives: "+lives, canvas.width-65, 20'),function(){for(const t=0;t<5;"c++")for(const e=0;e<3;"r++"){const n=h[t][e];1===n.status&&o>n.x&&o<n.x+75&&i>n.y&&i<n.y+20&&(l=-l,n.status=0,s++,15===s&&(alert("YOU WIN, CONGRATULATIONS!"),document.location.reload()))}}(),(o+n>t.width-10||o+n<10)&&(n=-n),i+l<10?l=-l:i+l>t.height-10&&(o>c&&o<c+75?(i-=10)&&(l=-l):(a--,a?(o=t.width/2,i=t.height-30,n=2,l=-2,c=(t.width-75)/2):(alert("GAME OVER"),document.location.reload()))),r&&c<t.width-75?c+=7:f&&c>0&&(c-=7),o+=n,i+=l,requestAnimationFrame(d)}()})();
