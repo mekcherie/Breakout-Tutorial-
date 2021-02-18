@@ -1,7 +1,7 @@
 /* eslint-disable max-classes-per-file */
 /// / CLASSES
 
-export class Ball {
+class Ball {
     constructor() {
       this.ballRadius = 10;
       this.color = '#0095DD';
@@ -42,7 +42,7 @@ export class Ball {
       }
     }
   }
-  export class Brick {
+  class Brick {
     constructor(argX, argY, argStatus) {
       this.x = argX;
       this.y = argY;
@@ -70,7 +70,7 @@ export class Ball {
       }
     }
   }
-  export class Paddle {
+    class Paddle {
     constructor(canvas) {
       this.color = '#0095DD';
       this.width = 75;
@@ -156,3 +156,5 @@ export class Ball {
     ball1.determineLoss(canvas,paddle)
   }
   setInterval(renderObjectsOnCanvas, 10);
+
+  export default {Ball, Brick, Paddle} 

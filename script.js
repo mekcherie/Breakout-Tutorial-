@@ -3,7 +3,7 @@
 /* eslint-disable no-plusplus */
 /* eslint-disable no-const-assign */
 /* eslint-disable no-use-before-define */
-import {Ball, Brick, Paddle} from "./class"
+import {Ball, Brick, Paddle} from './class.js'
 
 const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');
